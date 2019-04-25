@@ -14,7 +14,7 @@ public class MainActivity extends AppCompatActivity {
 
     private Button Click;
     private TextView ButtonCount,BackgroundCount;
-    private int ButCount, qwerty;
+    private int ButCount;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
