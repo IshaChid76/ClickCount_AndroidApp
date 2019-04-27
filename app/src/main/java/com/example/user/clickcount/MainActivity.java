@@ -12,7 +12,7 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity  {
 
     static final String SELECTED_ITEM_POSITION = "Count";
     static final String getSelectedItemPosition = "BgCount";
@@ -60,7 +60,7 @@ public class MainActivity extends AppCompatActivity {
         setView(MainActivity.this);
         Log.d(TAG, "onStop() called");
     }
-    
+
     protected void onSaveInstanceState(final Bundle outState){
         super.onSaveInstanceState(outState);
 
