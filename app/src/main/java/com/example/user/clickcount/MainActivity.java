@@ -5,6 +5,7 @@ import android.content.res.Configuration;
 import android.icu.text.DisplayContext;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Display;
 import android.view.View;
 import android.widget.Button;
@@ -15,6 +16,8 @@ public class MainActivity extends AppCompatActivity {
 
     static final String SELECTED_ITEM_POSITION = "Count";
     static final String getSelectedItemPosition = "BgCount";
+    private final static String TAG = "AppActivity";
+
 
     private Button Click;
     private TextView ButtonCount,BackgroundCount;
@@ -41,7 +44,6 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-
     }
 
     public void setView(Context ctx) {
@@ -56,8 +58,9 @@ public class MainActivity extends AppCompatActivity {
 
         BackCount++;
         setView(MainActivity.this);
+        Log.d(TAG, "onStop() called");
     }
-
+    
     protected void onSaveInstanceState(final Bundle outState){
         super.onSaveInstanceState(outState);
 
