@@ -78,7 +78,7 @@ public class MainActivity extends AppCompatActivity {
 
         isActivityChangingConfigurations = this.isChangingConfigurations();
 
-        if (--activityReferences == 0 && !isActivityChangingConfigurations) {
+        if (--activityReferences == 0 && !isActivityChangingConfigurations){
             BackCount++;
             // App enters background
         }
